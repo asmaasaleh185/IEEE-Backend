@@ -35,6 +35,22 @@
 
 ## naming conventions
 >*naming conventions are a set of rules for choosing the character sequence to be used for identifiers which denote variables, types, functions, and other entities in source code and documentation.<br>Reasons for using a naming convention:<br> - To reduce the effort needed to read and understand source code.<br> - To enable code reviews to focus on issues more important than syntax and naming standards. <br>- To enable code quality review tools to focus their reporting mainly on significant issues other than syntax and style preferences.*
+## constraints in Postgresql
+>*Constraints are the rules enforced on data columns on table. These are used to prevent invalid data from being entered into the database. This ensures the accuracy and reliability of the data in the database.*
+>- *NOT NULL Constraint: Ensures that a column cannot have NULL value.*
+>- *UNIQUE Constraint: Ensures that all values in a column are different.*
+>- *PRIMARY Key: Uniquely identifies each row/record in a database table.*
+>- *FOREIGN Key: Constrains data based on columns in other tables.*
+>- *CHECK Constraint: Ensures that all values in a column satisfy certain conditions.*
+>- *EXCLUSION Constraint: Ensures that if any two rows are compared on the specified column(s) or expression(s) using the specified operator(s), not all of these comparisons will return TRUE.*
+## indexing in Postgresql
+>*Indexes are special lookup tables that the database search engine can use to speed up data retrieval by creating a special data structure for quick row access. Different types of indexes serve various use cases and data types:*
+>- *B-tree Indexes: Default type, great for equality and range queries, handling high cardinality efficiently.*
+>- *Hash Indexes: Optimized for equality comparisons, not supporting range queries.*
+>- *GiST Indexes: Suitable for complex data types and full-text search, offering flexibility for different searches.*
+>- *GIN Indexes: Ideal for composite values, such as arrays or full-text search, handling multiple component elements within values.*
+>- *BRIN Indexes: Efficient for very large tables with data physically correlated, saving space but less precise, requiring partial table scans.*
+>- *SP-GiST Indexes: Supports partitioned search trees for non-uniformly distributed data, useful for certain spatial queries.*
 
 ## Resources
 >1-what is RDBMS?
@@ -56,3 +72,10 @@
 >
 >6- naming conventions
 >- https://en.wikipedia.org/wiki/Naming_convention_(programming)
+>
+>7- constraints in Postgresql
+>- https://www.tutorialspoint.com/postgresql/postgresql_constraints.htm
+>
+>8- indexing in Postgresql
+>- https://www.tutorialspoint.com/postgresql/postgresql_indexes.htm
+>- https://www.enterprisedb.com/postgres-tutorials/overview-postgresql-indexes
