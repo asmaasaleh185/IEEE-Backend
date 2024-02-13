@@ -51,7 +51,9 @@
 >- *GIN Indexes: Ideal for composite values, such as arrays or full-text search, handling multiple component elements within values.*
 >- *BRIN Indexes: Efficient for very large tables with data physically correlated, saving space but less precise, requiring partial table scans.*
 >- *SP-GiST Indexes: Supports partitioned search trees for non-uniformly distributed data, useful for certain spatial queries.*
-
+## Relations (one to one & one to many)
+>- *One-to-One relationship occurs when a single record in one table is associated with exactly one record in another table, and vice versa. This relationship can be created to link primary key of one table with a unique foreign key in the other table.*
+>- *one to many relationship is where a row from one table can have multiple matching rows in another table. This type of relationship can be created using Primary key - Foreign key relationship.*
 ## Resources
 >1-what is RDBMS?
 >- https://www.oracle.com/eg/database/what-is-a-relational-database/
@@ -79,3 +81,8 @@
 >8- indexing in Postgresql
 >- https://www.tutorialspoint.com/postgresql/postgresql_indexes.htm
 >- https://www.enterprisedb.com/postgres-tutorials/overview-postgresql-indexes
+>
+>9- Relations (one to one & one to many)
+>- https://medium.com/@emekadc/how-to-implement-one-to-one-one-to-many-and-many-to-many-relationships-when-designing-a-database-9da2de684710
+>- https://www.tutorialspoint.com/One-to-One-Relationship-in-DBMS
+>- https://www.tutorialspoint.com/One-to-Many-or-Many-to-One-Relationship-in-DBMS
