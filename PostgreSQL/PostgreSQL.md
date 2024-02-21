@@ -54,6 +54,18 @@
 ## Relations (one to one & one to many)
 >- *One-to-One relationship occurs when a single record in one table is associated with exactly one record in another table, and vice versa. This relationship can be created to link primary key of one table with a unique foreign key in the other table.*
 >- *one to many relationship is where a row from one table can have multiple matching rows in another table. This type of relationship can be created using Primary key - Foreign key relationship.*
+## Multi-version concurrency Control
+>- *Multi-version protocol aims to reduce the delay for read operations. It maintains multiple versions of data items. Whenever a write operation is performed, the protocol creates a new version of the transaction data to ensure conflict-free and successful read operations.*
+## triggers
+>- *Trigger is a database object containing SQL code that is automatically executed when a specific database event occurs.*
+>- *There are two types of triggers: row-level triggers and statement-level triggers*
+>- *Row-level trigger is executed once for each row affected by the triggering event, which is typically an INSERT, UPDATE, or DELETE statement.*
+>- *Statement-level trigger is executed once for the entire triggering event, instead of once for each row affected by the event.*
+>- *Statement-level triggers are useful to perform an action based on the overall effect of an INSERT, UPDATE, or DELETE statement, rather than on individual rows.*
+## How can you take the backup of a database?
+>- *The BACKUP DATABASE statement is used in SQL Server to create a full back up of an existing SQL database.<br>*
+>*Syntax:<br>*
+> BACKUP DATABASE databasename TO DISK = 'filepath';
 ## Resources
 >1-what is RDBMS?
 >- https://www.oracle.com/eg/database/what-is-a-relational-database/
@@ -86,3 +98,13 @@
 >- https://medium.com/@emekadc/how-to-implement-one-to-one-one-to-many-and-many-to-many-relationships-when-designing-a-database-9da2de684710
 >- https://www.tutorialspoint.com/One-to-One-Relationship-in-DBMS
 >- https://www.tutorialspoint.com/One-to-Many-or-Many-to-One-Relationship-in-DBMS
+>
+>10- Multi-version concurrency Control
+>- https://www.tutorialspoint.com/multiversion-concurrency-control-techniques
+>
+>11- triggers
+>- https://www.dbvis.com/thetable/sql-triggers-what-they-are-and-how-to-use-them/
+>
+>12- How can you take the backup of a database?
+>- https://www.w3schools.com/sql/sql_backup_db.asp
+>- https://www.quora.com/How-can-I-take-a-backup-for-an-SQL-database
