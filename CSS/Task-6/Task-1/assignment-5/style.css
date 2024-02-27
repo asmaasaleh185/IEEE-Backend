@@ -1,0 +1,32 @@
+.perant{
+    width: 400px;
+    margin-left: calc((100% - 400px) / 2);
+    background-color: #fff;
+    list-style: none;
+}
+.perant>li{
+    margin: 10px 0;
+    background-color: #eee;
+    padding: 10px;
+}
+.ol1 li{
+    list-style: outside;
+    list-style-type: decimal;
+    background-color: #fff;
+    margin: 5px;
+    padding: 5px;
+}
+.ol2 li{
+    list-style: outside;
+    list-style: upper-roman;
+    background-color: #fff;
+    margin: 5px;
+    padding: 5px;
+}
+li ul li{
+    list-style: circle;
+    list-style-position: inside;
+    background-color: #fff;
+    margin: 5px;
+    padding: 5px;
+}

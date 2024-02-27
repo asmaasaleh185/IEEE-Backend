@@ -1,0 +1,23 @@
+div{
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+    background-color: #d4d4d4;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div::first-letter{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    margin-left: -35px;
+    margin-right: 15px;
+
+}

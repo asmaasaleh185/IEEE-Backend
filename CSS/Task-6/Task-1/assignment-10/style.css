@@ -1,0 +1,33 @@
+p{
+    background-color: #EFEFEF;
+    padding: 15px 20px;
+    margin: 20px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    counter-increment: count;
+}
+p::after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #F44336;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+p::before{
+    content: counter(count);
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #F44336;
+    color: #fff;
+    left: -50px;
+    top: 0;
+    width: 43px;
+    height: calc(100% - 10px*2);
+
+}
