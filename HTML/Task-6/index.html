@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="post">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <p>Gender*</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        
+    
+        <p>Hobbies</p>
+        <input type="checkbox" id="hobby1" name="hobby1" value="Reading">
+        <label for="hobby1"> Reading</label>
+        <input type="checkbox" id="hobby2" name="hobby2" value="Traveling">
+        <label for="hobby2"> Traveling</label>
+        <input type="checkbox" id="hobby3" name="hobby3" value="Coding">
+        <label for="hobby3"> Coding</label>
+        <input type="checkbox" id="hobby4" name="hobby4" value="Gaming">
+        <label for="hobby4"> Gaming</label>
+    
+        <label for="track">Technical Track*</label>
+        <select id="track" name="track" required>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="AI & Machine Learning">AI & Machine Learning</option>
+        </select>
+    
+        <label for="profile_picture">Profile Picture*</label>
+        <input type="file" id="profile_picture" name="profile_picture" accept="image/*" required>
+    
+        <label for="cv">Upload CV*</label>
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+    
+        <label for="dob">Date of Birth*</label>
+        <input type="date" id="dob" name="dob" required>
+    
+        <label for="audio_intro">Audio Introduction (1 min)*</label>
+        <input type="file" id="audio_intro" name="audio_intro" accept="audio/*" required>
+    
+        <input type="submit" value="Submit">
+    </form>
+    <p>Go back to the <a href="#">Home Page</a>.</p>
+</body>
+</html>
