@@ -17,6 +17,21 @@
 >- *It is slower than an echo statement.*
 ## sensitivity in PHP
 - *PHP is partially case-sensitive. Knowing what are case sensitive and what is not is very important to avoid syntax errors.*
+## programming language vs scripting langauge
+- *Programming Language*
+ >Is a language which is used by humans to navigate their communication with computers. Programming Language is used to write computer programs. It is a high-speed language.
+- *Scripting Language*
+ >Is a language that uses a naive method to bring codes to a runtime environment. Scripting Language is used to create dynamic web applications. Scripting language contains different libraries.
+## dynamically typed vs statically typed language
+- *Statically Typed Languages*
+ >Checking occurs at compile time. At compile time, source code in a specific programming language is converted to a machine-readable format. This means that before source code is compiled, the type associated with each and every single variable must be known.
+- *Dynamically Typed Languages*
+ >checking takes place at runtime or execution time. This means that variables are checked against types only when the program is executing.
+## Assign by Value . VS . Assign by Reference
+- *Assign by Value*
+ >Making a copy of the original value and assigning it to a new variable. Any changes made to the new variable will not affect the original variable, and vice versa.
+- *Assign by Reference*
+ >Creating a reference or alias to the original variable. Any changes made to the new variable will be reflected in the original variable, and vice versa.
 ## Resources
 >1- what is PHP?
 >- https://www.php.net/manual/en/intro-whatis.php
@@ -31,4 +46,13 @@
 >
 >4- sensitivity in PHP
 >- https://www.phptutorial.net/php-tutorial/php-syntax/
+>
+>5- programming language vs scripting langauge
+>- https://www.geeksforgeeks.org/whats-the-difference-between-scripting-and-programming-languages/
+>
+>6- dynamically typed vs statically typed language
+>- https://www.baeldung.com/cs/statically-vs-dynamically-typed-languages
+>
+>7- Assign by Value . VS . Assign by Reference
+>- https://www.quora.com/What-is-the-difference-between-assigning-one-variable-to-another-by-value-and-by-reference-in-C
 >
