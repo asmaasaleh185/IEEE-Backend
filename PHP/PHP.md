@@ -32,6 +32,16 @@
  >Making a copy of the original value and assigning it to a new variable. Any changes made to the new variable will not affect the original variable, and vice versa.
 - *Assign by Reference*
  >Creating a reference or alias to the original variable. Any changes made to the new variable will be reflected in the original variable, and vice versa.
+## What are the different types of loop in PHP?
+- *for loop: This type of loops is used when the user knows in advance, how many times the block needs to execute.*
+- *while loop: The while loop is also an entry control loop like for loops i.e., it first checks the condition at the start of the loop and if its true then it enters the loop and executes the block of statements, and goes on executing it as long as the condition holds true.*
+- *do-while loop: It first enters the loop, executes the statements, and then checks the condition.*
+- *foreach loop: This loop is used to iterate over arrays. For every counter of loop, an array element is assigned and the next counter is shifted to the next element.*
+## What is the difference between for and foreach loop in PHP?
+- *For loop:*
+>*The iteration is clearly visible. The block of code is repeated as long as the condition is met or the counter meets a specific value.*
+- *foreach loop:*
+>*The iteration is hidden. The block of code is repeated until iterating over the array is completed.* 
 ## Resources
 >1- what is PHP?
 >- https://www.php.net/manual/en/intro-whatis.php
@@ -55,4 +65,10 @@
 >
 >7- Assign by Value . VS . Assign by Reference
 >- https://www.quora.com/What-is-the-difference-between-assigning-one-variable-to-another-by-value-and-by-reference-in-C
+>
+>8- What are the different types of loop in PHP?
+>- https://www.geeksforgeeks.org/php-loops/
+>
+>9- What is the difference between for and foreach loop in PHP?
+>- https://www.geeksforgeeks.org/what-is-the-difference-between-for-and-foreach-loop-in-php/
 >
