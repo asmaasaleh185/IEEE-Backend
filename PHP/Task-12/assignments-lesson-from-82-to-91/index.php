@@ -12,9 +12,9 @@ echo '<hr>';
 <!-- ============================================================================ -->
 <!-- assignment 2 -->
 <?php
-echo "Size In Megabyte Is " . round(filesize("G:\Asmaa\IEEE\IEEE-Backend\PHP\Task-12\Video.mp4") / 1024 / 1024, 0);
+echo "Size In Megabyte Is " . round(filesize("C:\Users\lenovo\Desktop\Video.mp4") / 1024 / 1024, 0);
 echo '<br>';
-echo "Size In Kilobyte Is " . round(filesize("G:\Asmaa\IEEE\IEEE-Backend\PHP\Task-12\Video.mp4") / 1024, 0);
+echo "Size In Kilobyte Is " . round(filesize("C:\Users\lenovo\Desktop\Video.mp4") / 1024, 0);
 echo '<hr>';
 // Output
 // "Size In Megabyte Is 32"
