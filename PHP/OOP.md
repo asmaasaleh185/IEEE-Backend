@@ -21,6 +21,14 @@
 - *A trait also is similar to an interface. The difference is that interface doesn't provide definition of method inside it, which must be done by implementing class. Trait method however, does provide definition, which may or may not be overridden by class that uses the trait.*
 - *It can't be instantiated directly.*
 - *Functionality of a trait is made available to a class by "use" keyword.*
+## Error Handling In PHP
+- *Error handling in PHP is almost similar to error handling in all programming languages. The default error handling in PHP will give file name line number and error type.*
+- *Ways to handle PHP Errors:*
+>- *Basic error handling: Using die() function which prints a message and exit from current script.*
+>- *Custom Error handling: Creating a custom error handler in PHP is quite simple. Create a function that can be called when an error has been occurred in PHP.*
+
+## Late Static Binding & How It Works
+- *The concept of late static bindings brings in a new keyword "static" and it used to bind the function to the runtime class or the class where the function was first used. In addition to this, any static function or variable is usually executed during runtime and not during compile time. Hence, if a value needs to be dynamically assigned to a static variable, it happens during runtime.*
 ## Resources
 >1- Encapsulation & Abstraction
 >- https://www.tutorialspoint.com/explain-difference-between-abstraction-and-encapsulation-in-php
@@ -33,4 +41,10 @@
 >
 >4- PHP Traits
 >- https://www.tutorialspoint.com/php-traits
+>
+>5- Error Handling In PHP
+>- https://www.geeksforgeeks.org/error-handling-in-php/
+>
+>6- Late Static Binding & How It Works
+>- https://www.tutorialspoint.com/what-are-late-static-bindings-in-php
 >
