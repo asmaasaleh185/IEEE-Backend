@@ -1,0 +1,20 @@
+{
+    "name": "lenovo/mvc",
+    "autoload": {
+        "psr-4": {
+            "Lenovo\\Mvc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "asmaasaleh185",
+            "email": "asmaasaleh185@gmail.com"
+        }
+    ],
+    "dump-autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
