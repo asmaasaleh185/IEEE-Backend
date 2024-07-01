@@ -1,5 +1,6 @@
 <?php
-namespace  app\core;
+
+namespace app\core;
 
 class Response{
     public function setStatusCode(int $code){

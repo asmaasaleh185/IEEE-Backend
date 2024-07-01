@@ -11,7 +11,7 @@
             "email": "asmaasaleh185@gmail.com"
         }
     ],
-    "dump-autoload": {
+    "autoload": {
         "psr-4": {
             "app\\": "./"
         }

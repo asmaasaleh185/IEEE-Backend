@@ -17,7 +17,6 @@ class Field{
         $this->type = self::TYPE_TEXT;
         $this->model = $model;
         $this->attribute = $attribute;
-
     }
     public function __toString(){
         return sprintf('
@@ -32,7 +31,7 @@ class Field{
             $this->type,
             $this->attribute,
             $this->model->{$this->attribute},
-            $this->model->hasError($this->attribute) ? ' is-invalid' : '',
+            $this->model->hasError($this->attribute) ? ' is-invalid' : '', 
             $this->model->getFirstError($this->attribute)
         );
     }
