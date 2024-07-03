@@ -1,5 +1,4 @@
 <?php
-// echo "Hello World.";
 
 use app\core\Application;
 use app\Controllers\authController;
@@ -11,6 +10,7 @@ $dotenv->load();
 
 
 $config = [
+    'userClass' => \app\Models\User::class,
     'db' => [
         'dsn' => $_ENV['DB_DSN'],
         'user' => $_ENV['DB_USER'],
@@ -29,6 +29,12 @@ $app->router->post('/login', [authController::class, 'login']);
 
 $app->router->get('/register', [authController::class, 'register']);
 $app->router->post('/register', [authController::class, 'register']);
+
+$app->router->get('/logout', [authController::class, 'logout']);
+
+$app->router->get('/profile', [authController::class, 'profile']);
+
+
 
 
 $app->run();

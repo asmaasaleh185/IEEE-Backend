@@ -12,9 +12,6 @@ class Request{
         }
         $path = substr($path, 0, $position);
         return $path;
-        // echo "<pre>";
-        // var_dump($position);
-        // echo "</pre>";
     }
 
     public function method(){

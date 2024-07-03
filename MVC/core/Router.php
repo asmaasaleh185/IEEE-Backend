@@ -5,6 +5,7 @@ namespace app\core;
 use app\core\Request;
 use app\core\Response;
 use app\core\Application;
+use app\core\exception\NotFoundException;
 
 class Router{
     public Request $request;
@@ -24,49 +25,50 @@ class Router{
     }
 
     public function resolve(){
-        // echo "<pre>";
-        // var_dump($_SERVER);
-        // echo "</pre>";
         
         $path = $this->request->getPath();
         $method = $this->request->method();
         
-        // echo "<pre>";
-        // var_dump($this->routes);
-        // echo "</pre>";
-
         $callback = $this->routes[$method][$path] ?? false;
         if ($callback === false){
-            $this->response->setStatusCode(404);
-            return $this->renderView("_404");
+            throw new NotFoundException();
         }
         if(is_string($callback)){
             return $this->renderView($callback);
         }
         if (is_array($callback)){
-            Application::$app->controller = new $callback[0]();
-            $callback[0] = Application::$app->controller;
+            /** @var \app\core\Controller $controller */
+            $controller = new $callback[0]();
+            Application::$app->controller = $controller;
+            $controller->action = $callback[1];
+            $callback[0] = $controller;
+            foreach ($controller->getMiddlewares() as $middleware){
+                $middleware->execute();
+            }
+
         }
         
         // echo "<pre>";
         // var_dump($callback);
         // echo "</pre>";
 
-        echo call_user_func($callback, $this->request);
+        return call_user_func($callback, $this->request, $this->response);
     }
 
     public function renderView($view, $params = []){
         $layoutContent = $this->layoutContent();
         $viewContent = $this->renderOnlyView($view, $params);
         return str_replace('{{content}}', $viewContent, $layoutContent);
-        // include_once Application::$ROOT_DIR."/Views/$view.php";
     }
     public function renderContent($viewContent){
         $layoutContent = $this->layoutContent();
         return str_replace('{{content}}', $viewContent, $layoutContent);
     }
     protected function layoutContent(){
-        $layout = Application::$app->controller->layout;
+        $layout = Application::$app->layout;
+        if (Application::$app->controller){
+            $layout = Application::$app->controller->layout;
+        }
         ob_start();
         include_once Application::$ROOT_DIR."/Views/layouts/$layout.php";
         return ob_get_clean();

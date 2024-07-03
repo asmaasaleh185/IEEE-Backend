@@ -1,16 +1,13 @@
-<h1>Contact us</h1>
-<form action="" method="post">
-    <div class="form-group">
-            <label >Subject</label>
-            <input type="text" name = "subject" class="form-control" >
-    </div>
-    <div class="form-group">
-        <label >Email</label>
-        <input type="email" name = "email" class="form-control" >
-    </div>
-    <div class="form-group">
-        <label >Body</label>
-        <textarea name = "body" class="form-control" ></textarea>
-    </div>
+<?php
+/** @var $model \app\Moels\User */ 
+?>
+<h1>Login</h1>
+
+<?php $form = \app\core\Form\Form::begin('', "post"); ?>
+    <?php echo $form->field($model, 'email'); ?>
+    <?php echo $form->field($model, 'password')->passwordField(); ?>
+
     <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+
+<?php \app\core\Form\Form::end(); ?>
+
