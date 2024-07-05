@@ -70,6 +70,7 @@ class authController extends Controller{
         $response->redirect('/');
     }
     public function profile(){
+        
         return $this->render('profile');
     }
 }
