@@ -4,8 +4,41 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "25557700815e58ad51803a47acdef157",
+    "content-hash": "4f8cde8658608ccf6b232ace3fad5105",
     "packages": [
+        {
+            "name": "corepackage/php-mvc-core",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asmaasaleh185/php-mvc-core.git",
+                "reference": "ffb4087176d619736993a13ebf7a4effadae018d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asmaasaleh185/php-mvc-core/zipball/ffb4087176d619736993a13ebf7a4effadae018d",
+                "reference": "ffb4087176d619736993a13ebf7a4effadae018d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "corepackage\\phpmvc\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "asmaasaleh185",
+                    "email": "asmaasaleh185@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/asmaasaleh185/php-mvc-core/issues",
+                "source": "https://github.com/asmaasaleh185/php-mvc-core/tree/v1.0.3"
+            },
+            "time": "2024-07-06T03:03:43+00:00"
+        },
         {
             "name": "graham-campbell/result-type",
             "version": "v1.1.2",

@@ -1,7 +1,7 @@
 <?php
 // echo "Hello World.";
 
-use app\core\Application;
+use corepackage\phpmvc\Application;
 use app\Controllers\authController;
 use app\Controllers\siteController;
 

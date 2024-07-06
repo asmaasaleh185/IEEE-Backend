@@ -1,9 +1,9 @@
 <?php
-/** @var $title \app\core\View */
+/** @var $title \corepackage\phpmvc\View */
 /** @var $model \app\Models\ContactForm */
 
-use app\core\Form\Form;
-use app\core\Form\TextareaField;
+use corepackage\phpmvc\Form\Form;
+use corepackage\phpmvc\Form\TextareaField;
 
 $this->title = 'Contact';
 ?>
@@ -16,6 +16,6 @@ $this->title = 'Contact';
 
     <button type="submit" class="btn btn-primary">Submit</button>
 
-<?php \app\core\Form\Form::end(); ?>
+<?php \corepackage\phpmvc\Form\Form::end(); ?>
 
 

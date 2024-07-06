@@ -1,6 +1,6 @@
 <?php
 
-use app\core\Application;
+use corepackage\phpmvc\Application;
 use app\Controllers\authController;
 use app\Controllers\siteController;
 
@@ -19,6 +19,11 @@ $config = [
 ];
 
 $app = new Application(dirname(__DIR__), $config);
+
+$app->on(Application::EVENT_BEFORE_REQUEST, function(){
+    echo "Before request";
+});
+
 
 $app->router->get('/', [siteController::class, 'home']);
 $app->router->get('/contact', [siteController::class, 'contact']);

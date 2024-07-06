@@ -2,7 +2,7 @@
 
 namespace app\Models;
 
-use app\core\Model;
+use corepackage\phpmvc\Model;
 
 class ContactForm extends Model{
     public $subject = '';

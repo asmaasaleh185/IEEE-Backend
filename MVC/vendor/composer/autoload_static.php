@@ -13,6 +13,10 @@ class ComposerStaticInitfd0db06a00f3e0bb0b7e630a5d865ad8
     );
 
     public static $prefixLengthsPsr4 = array (
+        'c' => 
+        array (
+            'corepackage\\phpmvc\\' => 19,
+        ),
         'a' => 
         array (
             'app\\' => 4,
@@ -38,6 +42,10 @@ class ComposerStaticInitfd0db06a00f3e0bb0b7e630a5d865ad8
     );
 
     public static $prefixDirsPsr4 = array (
+        'corepackage\\phpmvc\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/corepackage/php-mvc-core',
+        ),
         'app\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',

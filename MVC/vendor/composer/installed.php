@@ -10,6 +10,15 @@
         'dev' => true,
     ),
     'versions' => array(
+        'corepackage/php-mvc-core' => array(
+            'pretty_version' => 'v1.0.3',
+            'version' => '1.0.3.0',
+            'reference' => 'ffb4087176d619736993a13ebf7a4effadae018d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../corepackage/php-mvc-core',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'graham-campbell/result-type' => array(
             'pretty_version' => 'v1.1.2',
             'version' => '1.1.2.0',

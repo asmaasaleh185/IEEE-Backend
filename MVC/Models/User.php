@@ -2,9 +2,9 @@
 
 namespace app\Models;
 
-use app\core\Model;
-use app\core\DbModel;
-use app\core\UserModel;
+use corepackage\phpmvc\Model;
+use corepackage\phpmvc\DbModel;
+use corepackage\phpmvc\UserModel;
 
 class User extends UserModel{
     const STATUS_INACTIVE = 0;

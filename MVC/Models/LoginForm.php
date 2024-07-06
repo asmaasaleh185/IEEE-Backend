@@ -2,9 +2,9 @@
 
 namespace app\Models;
 
-use app\core\Model;
+use corepackage\phpmvc\Model;
 use app\Models\User;
-use app\core\Application;
+use corepackage\phpmvc\Application;
 
 class LoginForm extends Model{
     public string $email = '';
