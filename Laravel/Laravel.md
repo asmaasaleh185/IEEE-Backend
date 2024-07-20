@@ -49,6 +49,69 @@ Route::get('user/profile', 'UserController@showProfile')->name('profile');
 ```
 <hr>
 
+# Blade Templates and how it works
+- *The Blade is a powerful templating engine in a Laravel framework. The blade allows to use the templating engine easily, and it makes the syntax writing very simple. The blade templating engine provides its own structure such as conditional statements and loops.*
+- *To create a blade template, you just need to create a view file and save it with a .blade.php extension instead of .php extension.*
+## Template Inheritance
+- *Blade allows you to define a master layout that can be extended by other views. This is useful for defining a common structure for your application.*
+- *The `@extends` directive is used to specify the layout a view extends.*
+- *The `@section` directive defines a section of content, and the `@yield` directive is used in the master layout to output the sections from the child views.*
+
+```php
+<!-- resources/views/layouts/app.blade.php -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Name - @yield('title')</title>
+</head>
+<body>
+    <div class="container">
+        @yield('content')
+    </div>
+</body>
+</html>
+
+<!-- resources/views/child.blade.php -->
+@extends('layouts.app')
+
+@section('title', 'Page Title')
+
+@section('content')
+    <p>This is my body content.</p>
+@endsection 
+```
+## Displaying Data
+- *If you want to print the value of a variable, then you can do so by simply enclosing the variable within the curly brackets.*
+- Syntax:  `{{$variable}}; ` 
+## Blade Template Control Statements
+- *Blade templating engine also provides the control statements in laravel as well as shortcuts for the control statements.*
+```php
+@if (count($records) === 1)
+    I have one record!
+@elseif (count($records) > 1)
+    I have multiple records!
+@else
+    I don't have any records!
+@endif
+
+@foreach ($users as $user)
+    <p>This is user {{ $user->id }}</p>
+@endforeach
+
+@for ($i = 0; $i < 10; $i++)
+    <p>The current value is {{ $i }}</p>
+@endfor
+
+@while (true)
+    <p>I'm looping forever.</p>
+@endwhile
+```
+
+## Benefits of Blade
+- *Clean Syntax: Blade provides a clean and concise syntax for writing views.*
+- *Reusable Components: With components and slots, you can create reusable and maintainable pieces of HTML.*
+- *Template Inheritance: Blade’s template inheritance makes it easy to create a consistent look and feel across your application.*
+
 # Resources
 - Request Lifecycle
   - https://laravel.com/docs/11.x/lifecycle
@@ -58,3 +121,5 @@ Route::get('user/profile', 'UserController@showProfile')->name('profile');
 
 - Facades
   - https://www.tutorialspoint.com/laravel/laravel_routing.htm
+- Blade Templates and how it works
+  - https://www.javatpoint.com/laravel-blade-template
